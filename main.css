@@ -1,0 +1,13 @@
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.8rem; /* Improved readability */
+    z-index: 1000; /* Ensures it remains on top of other elements */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow for depth */
+}

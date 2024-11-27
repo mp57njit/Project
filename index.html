@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Currency Finder</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossorigin="anonymous">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container-fluid">
+    <!-- Navigation Menu -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Currency Finder</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="country-currency.html">Country & Currency</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <!-- Dropdown for Education -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-bs-toggle="dropdown">
+                        Education
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Exchange Rates</a>
+                        <a class="dropdown-item" href="#">Currency Symbols</a>
+                        <a class="dropdown-item" href="#">Tips for Travelers</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Jumbotron / Hero Section -->
+    <div class="bg-light text-center py-5 px-4">
+        <div class="container">
+            <h1 class="display-4">Welcome to Currency Finder</h1>
+            <p class="lead">Discover currencies used across the world. Quickly and easily access currency names, symbols, and codes.</p>
+            <a href="country-currency.html" class="btn btn-primary btn-lg">Explore Now</a>
+        </div>
+    </div>
+
+    <!-- Main Content Section -->
+    <div class="container my-5">
+        <!-- Hero Section -->
+        <div class="row text-center mb-5">
+            <div class="col">
+                <h1>Search for a Country's Currency</h1>
+                <p>Find the currency of any country quickly and easily!</p>
+                <!-- Search Form for Country -->
+                <div class="card mx-auto" style="max-width: 500px;">
+                    <div class="card-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="country" class="form-label">Enter Country Name</label>
+                                <input type="text" class="form-control" id="country" placeholder="e.g., USA, Germany" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Featured Currencies Section -->
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="Currency">
+                    <div class="card-body">
+                        <h5 class="card-title">USD - United States Dollar</h5>
+                        <p class="card-text">The currency of the United States, widely used in global transactions.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="Currency">
+                    <div class="card-body">
+                        <h5 class="card-title">EUR - Euro</h5>
+                        <p class="card-text">The official currency of the Eurozone, used by 19 of the 27 EU member countries.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="Currency">
+                    <div class="card-body">
+                        <h5 class="card-title">GBP - British Pound</h5>
+                        <p class="card-text">The official currency of the United Kingdom, also known as "Pound Sterling".</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer bg-dark text-white py-3">
+        <div class="container text-center">
+            <span>&copy; 2024 Mothila Puvanendran | Terms of Use | Privacy Statement</span>
+        </div>
+    </footer>
+</div>
+
+<!-- Javascript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>
